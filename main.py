@@ -50,4 +50,5 @@ if __name__ == "__main__":
         to-do 
 
     ~ get total time elapsed since starting the afk program (also account for the seconds where the main process is sleeping.)
+    
 '''
