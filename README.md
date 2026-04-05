@@ -1,4 +1,5 @@
-![image](https://github.com/user-attachments/assets/b13f19f4-9400-49c9-9eeb-fa1d253f0331)
+<img width="1112" height="405" alt="image" src="https://github.com/user-attachments/assets/54c373b7-db4b-41aa-9d9c-8def958b4bc6" />
+
 
 
 # RoAFK
