@@ -1,4 +1,4 @@
-# Anti Kick script for roblox. | Created by coolpancakes
+# Universal anti kick script. | Created by haeoro
 
 import os
 import pydirectinput
