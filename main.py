@@ -7,7 +7,7 @@ import banners
 
 
 def afk():
-    start = time.strftime("%H:%M:%S")
+    start = time.localtime()
     try:
         print("\n\n    Press CTRL-C to quit. ")
 
@@ -20,11 +20,16 @@ def afk():
             time.sleep(1)
             pydirectinput.press("d")
     except KeyboardInterrupt:
-        end = time.strftime("%H:%M:%S")
         os.system("cls")
-        print("\n    From start to finish: ")
-        print("\n\n    Start time: {}".format(start))
-        print("    Finish time: {}".format(end))
+        end = time.localtime()
+        elapsed_time = [end[3] - start[3], end[4] - start[4], end[5] - start[5]]
+        print("""   Time spent AFK
+        
+        Hours: {}
+        Minutes: {}
+        Seconds: {}
+        
+        """.format(elapsed_time[0], elapsed_time[1], elapsed_time[2]))
         time.sleep(5)
 
 
@@ -45,10 +50,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-'''
-        to-do 
-
-    ~ get total time elapsed since starting the afk program (also account for the seconds where the main process is sleeping.)
-    
-'''
